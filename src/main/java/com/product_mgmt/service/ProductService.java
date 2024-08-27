@@ -1,7 +1,7 @@
-package com.Product_mgmt.service;
+package com.product_mgmt.service;
 
-import com.Product_mgmt.entity.Product;
-import com.Product_mgmt.repository.ProductRepository;
+import com.product_mgmt.entity.Product;
+import com.product_mgmt.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
