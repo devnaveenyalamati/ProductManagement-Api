@@ -1,4 +1,4 @@
-package com.Product_mgmt.mapper;
+package com.product_mgmt.mapper;
 
 
 import org.mapstruct.Mapper;

@@ -1,4 +1,4 @@
-package com.Product_mgmt.config;
+package com.product_mgmt.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

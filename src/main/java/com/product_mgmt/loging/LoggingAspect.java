@@ -1,4 +1,4 @@
-package com.Product_mgmt.loging;
+package com.product_mgmt.loging;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -12,17 +12,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoggingAspect {
 
-    @Before("execution(* com.Product_mgmt.service.ProductService.*(..))")
+    @Before("execution(* com.product_mgmt.service.ProductService.*(..))")
     public void logBefore(JoinPoint joinPoint) {
         System.out.println("Executing method: " + joinPoint.getSignature().getName());
     }
 
-    @AfterReturning(pointcut = "execution(* com.Product_mgmt.service.ProductService.*(..))", returning = "result")
+    @AfterReturning(pointcut = "execution(* com.product_mgmt.service.ProductService.*(..))", returning = "result")
     public void logAfterReturning(JoinPoint joinPoint, Object result) {
         System.out.println("Method " + joinPoint.getSignature().getName() + " returned " + result);
     }
 
-    @Around("execution(* com.Product_mgmt.service.ProductService.*(..))")
+    @Around("execution(* com.product_mgmt.service.ProductService.*(..))")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
         System.out.println("Method " + joinPoint.getSignature().getName() + " execution start");
         Object result = joinPoint.proceed();
